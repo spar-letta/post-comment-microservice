@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/post-comment-db?createDatabaseIfNotExist=true
+    username: root
+    password: pool
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+  application:
+    name: POST-SERVICE
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
